@@ -1,0 +1,122 @@
+political_decisions = {
+	transfer_state = {#email me if you find a bug gaming44592@gmail.com
+		potential = {
+			ai = no
+			has_country_flag = show_transfer
+		}
+		allow = {
+			
+		}
+		effect = {
+			any_country = {
+				limit = {
+					has_country_flag = allow_transfer
+					ai = no
+				}
+				country_event = 9999992
+			}
+		}
+	}
+
+	mark_state = {
+		potential = {
+			ai = no
+			has_country_flag = show_transfer
+		}
+		allow = {
+			any_owned_province = {
+				NOT = {has_province_modifier = marked_for_transfer}
+			}
+		}
+		effect = {
+			any_state = {
+				limit = {
+					any_owned_province = {
+						NOT = {has_province_modifier = marked_for_transfer}
+					}
+				}
+				random_owned = {
+					province_event = {id = 9999990}
+				}
+			}
+		}
+	}
+
+	unmark_state = {
+		potential = {
+			ai = no
+			has_country_flag = show_transfer
+		}
+		allow = {
+			any_owned_province = {
+				has_province_modifier = marked_for_transfer
+			}
+		}
+		effect = {
+			any_state = {
+				limit = {
+					any_owned_province = {
+						has_province_modifier = marked_for_transfer
+					}
+				}
+				random_owned = {
+					province_event = {id = 9999991}
+				}
+			}
+		}
+	}
+
+	show_transfer = {
+		potential = {
+			ai = no
+			NOT = {has_country_flag = show_transfer}
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = show_transfer
+		}
+	}
+
+	hide_transfer = {
+		potential = {
+			ai = no
+			has_country_flag = show_transfer
+		}
+		allow = {
+			
+		}
+		effect = {
+			remove_country_flag = show_transfer
+		}
+	}
+
+	allow_transfer = {
+		potential = {
+			ai = no
+			has_country_flag = show_transfer
+			NOT = {has_country_flag = allow_transfer}
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = allow_transfer
+		}
+	}
+
+	deny_transfer = {
+		potential = {
+			ai = no
+			has_country_flag = show_transfer
+			has_country_flag = allow_transfer
+		}
+		allow = {
+			
+		}
+		effect = {
+			remove_country_flag = allow_transfer
+		}
+	}
+}

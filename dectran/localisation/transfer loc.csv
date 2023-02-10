@@ -1,0 +1,15 @@
+#;;;;;;;;;;;;;x;;;
+transfer_state_title;Send transfer offers.;;;;;;;;;;;;x;;;
+transfer_state_desc;Will send offers to other countries to recieve a transfer from us. When someone accepts we will get some events to decide which states to give them from our marked states.;;;;;;;;;;;;x;;;
+mark_state_title;Mark states for transfer;;;;;;;;;;;;x;;;
+mark_state_desc;Will give us events to decide which states to mark as available for transfer.;;;;;;;;;;;;x;;;
+unmark_state_title;Unmark states for transfer;;;;;;;;;;;;x;;;
+unmark_state_desc;Will give us events to decide which states to unmark as available for transfer.;;;;;;;;;;;;x;;;
+show_transfer_title;Show transfer decisions.;;;;;;;;;;;;x;;;
+show_transfer_desc;Shows transfer decisions.;;;;;;;;;;;;x;;;
+hide_transfer_title;Hide transfer decisions.;;;;;;;;;;;;x;;;
+hide_transfer_desc;Hides transfer decisions;;;;;;;;;;;;x;;;
+allow_transfer_title;Recieve transfer offers.;;;;;;;;;;;;x;;;
+allow_transfer_desc;Will allow us to receive transfer offers from other nations.;;;;;;;;;;;;x;;;
+deny_transfer_title;Reject transfer offers.;;;;;;;;;;;;x;;;
+deny_transfer_desc;Will prevent us from recieving transfer offers.;;;;;;;;;;;;x;;;
