@@ -1,6 +1,7 @@
 # Vic2DecisionTransfer
 Decision based transfer system instead of the CB war based system
 
-Needs province effect marked_for_transfer to event_modifiers.txt for the events to work right.
+Needs state_selector and state_deselector buildings as defined in buildings.txt
+ui also needs to be tweaked
 
-add this mod to whatever you want
+use however you want
